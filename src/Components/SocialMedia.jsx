@@ -174,7 +174,7 @@ export default function SocialMedia() {
 					</a>
 				</TabPanel>
 				<TabPanel value={value} index={3}>
-					<a href="https://www.linkedin.com/in/moch-raffi/">
+					<a href="https://www.linkedin.com/in/muhammad-raffi-71b26a402?utm_source=share_via&utm_content=profile&utm_medium=member_android">
 						<img
 							src="/SocialMediaImg/linkedin.jpg"
 							alt="Linkedin Rafi"

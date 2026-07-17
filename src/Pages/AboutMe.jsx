@@ -63,8 +63,8 @@ const AboutMe = () => {
 							className="text-[#a6adba] w-full text-justify text-xl mb-5 mt-5 md:mt-0"
 							data-aos="fade-up"
 							data-aos-duration="600">
-							Nama Saya Mochammad Rafi, Fresh Graduate bidang Teknik Komputer
-							Jaringan dengan fokus pada pengembangan front-end web. Saya memiliki tekad yang kuat
+							Nama Saya Mochammad Rafi, Fresh Graduate bidang Teknik Jaringan
+							Komputer dan Telekomuikasi dengan fokus pada pengembangan front-end web. Saya memiliki tekad yang kuat
 							untuk terus belajar dan mengasah keterampilan saya demi mencapai kesempurnaan. Selalu
 							berusaha untuk menemukan solusi terbaik dalam setiap proyek yang saya kerjakan dan
 							memiliki minat besar di bidang front-end web.
