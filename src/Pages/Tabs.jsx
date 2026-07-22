@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { db, collection } from "../firebase";
-import { getDocs } from "firebase/firestore";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
 import { useTheme } from "@mui/material/styles";
@@ -15,6 +13,45 @@ import PIcon from "../Components/CardIcon";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { styled } from "@mui/system";
+
+const normalizeProject = (project, fallbackIndex = 0) => {
+  const title = project?.Title || project?.title || `Project ${fallbackIndex + 1}`;
+  const description = project?.Description || project?.description || "Deskripsi project belum tersedia.";
+  const img = project?.Img || project?.img || "/ImgWeb.png";
+  let link = project?.Link || project?.link || "#";
+
+  if (typeof link === "string" && link && !/^https?:\/\//i.test(link) && !/^mailto:/i.test(link) && !link.startsWith("#")) {
+    link = `https://${link}`;
+  }
+
+  return {
+    Title: title,
+    Description: description,
+    Img: img,
+    Link: link,
+  };
+};
+
+const defaultProjects = [
+  {
+    Img: "/Project/BlushPink.png",
+    Title: "E-Invite - Blush Pink",
+    Description: "Website Undangan Digital dengan Tema Blush & Pink serta Beberapa Elemen seperti: Hero Image Couple, Contdown Timer, Galerry Photo, Maps Location, Background Music dan Guest Comments.",
+    Link: "https://blush-pink.vercel.app",
+  },
+  {
+    Img: "/Project/RomanticGarden.png",
+    Title: "E-Invite - Romantic Garden",
+    Description: "Website Undangan Digital dengan Tema Romantic Garden serta Elemen Seperti Hero Image Couple, Countdown Timer, Galerry Photo, Maps Location, Background Music dan Guest Comments.",
+    Link: "romantic-garden-wedding.vercel.app",
+  },
+  {
+    Img: "Project/GoldModernGlass.png",
+    Title: "Gold & Modern Glass",
+    Description: "Website Undangan Digital dengan Tema Romantic Garden serta Elemen Seperti Hero Image Couple, Countdown Timer, Galerry Photo, Maps Location, Background Music dan Guest Comments.",
+    Link: "https://gold-modern-glass.vercel.app/",
+  },
+];
 
 function TabPanel(props) {
   useEffect(() => {
@@ -57,30 +94,14 @@ function a11yProps(index) {
 export default function FullWidthTabs() {
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
-  const [projects, setProjects] = useState([]);
+  const [projects] = useState(defaultProjects.map((project, index) => normalizeProject(project, index)));
   const [certificates, setCertificates] = useState([]);
   const [showAllProjects, setShowAllProjects] = useState(false);
   const [showAllCertificates, setShowAllCertificates] = useState(false);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const projectCollection = collection(db, "projects");
-        const certificateCollection = collection(db, "certificates");
-        const projectQuerySnapshot = await getDocs(projectCollection);
-        const certificateQuerySnapshot = await getDocs(certificateCollection);
-
-        const projectData = projectQuerySnapshot.docs.map((doc) => doc.data());
-        const certificateData = certificateQuerySnapshot.docs.map((doc) => doc.data());
-
-        setProjects(projectData);
-        setCertificates(certificateData);
-      } catch (error) {
-        console.error("Error fetching data from Firebase:", error);
-      }
-    };
-
-    fetchData();
+    AOS.init();
+    AOS.refresh();
   }, []);
 
   const handleChange = (event, newValue) => {
@@ -129,8 +150,19 @@ export default function FullWidthTabs() {
 
         <SwipeableViews axis={theme.direction === "rtl" ? "x-reverse" : "x"} index={value} onChangeIndex={setValue}>
           <TabPanel value={value} index={0} dir={theme.direction}>
-            <div className="container mx-auto flex justify-center items-center overflow-hidden">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">{/* Projects temporarily hidden */}</div>
+            <div className="container mx-auto overflow-hidden">
+              <h2 className="text-center text-3xl font-semibold text-[#ced4d7] mb-6">My Projects</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {projects.map((project, index) => (
+                  <CardProject
+                    key={index}
+                    Img={project.Img || project.img || "/ImgWeb.png"}
+                    Title={project.Title || project.title || `Project ${index + 1}`}
+                    Description={project.Description || project.description || "Deskripsi project belum tersedia."}
+                    Link={project.Link || project.link || "#"}
+                  />
+                ))}
+              </div>
             </div>
           </TabPanel>
 
