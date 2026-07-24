@@ -68,7 +68,7 @@ export default function SocialMedia() {
 				<Tab
 					label={
 						<div className="flex gap-x-3 w-full">
-							<img src="/SocialMediaImg/instagram.svg" alt="Instagram Eki" />
+							<img src="/SocialMediaImg/instagram.svg" alt="Instagram Rafi" />
 							Instagram
 						</div>
 					}
@@ -83,7 +83,7 @@ export default function SocialMedia() {
 				<Tab
 					label={
 						<div className="flex gap-x-3 w-full">
-							<img src="/SocialMediaImg/tiktok.svg" alt="Tiktok Eki" />
+							<img src="/SocialMediaImg/tiktok.svg" alt="Tiktok Rafi" />
 							Tiktok
 						</div>
 					}
@@ -98,7 +98,7 @@ export default function SocialMedia() {
 				<Tab
   					label={
     					<div className="flex gap-x-3 w-full">
-							<img src="/SocialMediaImg/facebook.svg" alt="Facebook Eki"
+							<img src="/SocialMediaImg/facebook.svg" alt="Facebook Rafi"
         					 className="w-4 h-4 invert"
       			/>
       						Facebook
@@ -115,7 +115,7 @@ export default function SocialMedia() {
 				<Tab
 					label={
 						<div className="flex gap-x-3 w-full">
-							<img src="/SocialMediaImg/linkedin.svg" alt="Linkedin Eki" />
+							<img src="/SocialMediaImg/linkedin.svg" alt="Linkedin Rafi" />
 							Linkedin
 						</div>
 					}
@@ -130,7 +130,7 @@ export default function SocialMedia() {
       			<Tab
 					label={
 						<div className="flex gap-x-3 w-full">
-							<img src="/SocialMediaImg/github.svg" alt="Github Eki" />
+							<img src="/SocialMediaImg/github.svg" alt="Github Rki" />
 							Github
 						</div>
 					}
@@ -150,7 +150,7 @@ export default function SocialMedia() {
 					<a href="https://www.instagram.com/raffkennedy_/?hl=id">
 						<img
 							src="/SocialMediaImg/Instagram.jpg"
-							alt="Instagram Eki"
+							alt="Instagram Rafi"
 							className="object-contain h-auto w-[10rem] md:w-[14.3rem]  rounded-xl "
 						/>
 					</a>
