@@ -51,6 +51,12 @@ const defaultProjects = [
     Description: "Website Undangan Digital dengan Tema Romantic Garden serta Elemen Seperti Hero Image Couple, Countdown Timer, Galerry Photo, Maps Location, Background Music dan Guest Comments.",
     Link: "https://gold-modern-glass.vercel.app/",
   },
+  {
+    Img: "/Project/Komputama.png",
+    Title: "Website Kelas - XII TJKT.2",
+    Description: "Website Kelas Tema simple dengan menampilkan dokumentasi personil kelas dan beberapa dokumentasi momen semasa di bangku sekolah.",
+    Link: "https://komputama-26.edgeone.dev/",
+  },
 ];
 
 function TabPanel(props) {
