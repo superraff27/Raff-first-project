@@ -23,57 +23,6 @@ const ContactForm = () => {
 						<div className="md:w-1/2 w-auto" data-aos="fade-up" data-aos-duration="1000">
 							<SocialMedia />
 						</div>
-						<div className="md:w-1/2 w-auto">
-							<div
-								className="text-[#ced4d7] font-semibold md:mt-0 md:pl-1 mt-10 text-base mb-3 opacity-60"
-								data-aos="fade-up"
-								data-aos-duration="600">
-								Have something to discuss? Send me a message and let's talk.
-							</div>
-
-							<form
-								action="https://formsubmit.co/mochrafi2703@gmail.com"
-								method="POST"
-								className=" md:p-1 p-0"
-								data-aos="fade-up"
-								data-aos-duration="1000">
-								<div className="mb-6" data-aos="fade-up" data-aos-duration="600">
-									<label htmlFor="name" className="block text-[#ced4d7] font-semibold mb-2">
-										Name
-									</label>
-									<input
-										required
-										type="text"
-										name="name"
-										id="name"
-										autoComplete="off"
-										placeholder="Your Name"
-										className="w-full px-3 py-2 border h-14 rounded-lg focus:outline-none focus:border-[#ced4d7] bg-transparent text-[#a6adba]"
-									/>
-								</div>
-								<div className="mb-6" data-aos="fade-up" data-aos-duration="800">
-									<label htmlFor="from" className="block text-[#ced4d7] font-semibold mb-2">
-										From
-									</label>
-									<input
-										required
-										type="text"
-										name="from"
-										id="from"
-										placeholder="From"
-										autoComplete="off"
-										className="w-full px-3 py-2 border h-14 rounded-lg focus:outline-none focus:border-[#ced4d7] bg-transparent text-[#a6adba]"
-									/>
-								</div>
-								<input type="hidden" name="_captcha" value="false" />
-								<input type="hidden" name="_template" value="table" />
-								<button
-									type="submit"
-									className="text-center bg-[#ced4d7] text-[#212121] mb-20 font-semibold py-2 px-4 rounded-lg hover:bg-[#1f2937] hover:text-[#ced4d7] transition-all duration-200 ease-out">
-									Send
-								</button>
-							</form>
-						</div>
 					</div>
 				</div>
 			</div>
