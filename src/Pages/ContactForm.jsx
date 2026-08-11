@@ -65,18 +65,6 @@ const ContactForm = () => {
 										className="w-full px-3 py-2 border h-14 rounded-lg focus:outline-none focus:border-[#ced4d7] bg-transparent text-[#a6adba]"
 									/>
 								</div>
-								<div className="mb-5" data-aos="fade-up" data-aos-duration="1000">
-									<label htmlFor="message" className="block text-[#ced4d7] font-semibold mb-2">
-										Message
-									</label>
-									<textarea
-										required
-										type="text"
-										name="message"
-										id="message"
-										placeholder="Message"
-										className="w-full px-3 py-2 md:h-48 h-40 border rounded-lg focus:outline-none focus:border-[#ced4d7] bg-transparent text-[#a6adba]"></textarea>
-								</div>
 								<input type="hidden" name="_captcha" value="false" />
 								<input type="hidden" name="_template" value="table" />
 								<button
