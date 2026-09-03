@@ -2,7 +2,7 @@ const ButtonCV = () => {
 	return (
 		<>
 			<a
-				href="https://drive.google.com/file/d/1yINbZPMizhqylIPMNzdUmp_K2nPqX9bL/view?usp=drive_link"
+				href="https://drive.google.com/file/d/1fxzQ-d7l_vgsalZ6Xa5gFxVI1gAJRfr7/view?usp=drive_link"
 				class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-medium tracking-tighter text-[#ced4d7] bg-gray-800 rounded-lg group">
 				<span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#1a1a1a] rounded-full group-hover:w-56 group-hover:h-56"></span>
 				<span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>

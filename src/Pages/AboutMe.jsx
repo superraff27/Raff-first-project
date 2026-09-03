@@ -48,7 +48,7 @@ const AboutMe = () => {
 					<div className="flex justify-center items-center md:pr-10 pr-0 md:w-auto ">
 						<div data-aos="fade-up" data-aos-duration="1000">
 							<img
-								src="/Photo.jpg"
+								src="/Photo(2).jpg"
 								alt="Photo Siluet"
 								className="
                             w-[30rem] h-auto rounded-xl "
