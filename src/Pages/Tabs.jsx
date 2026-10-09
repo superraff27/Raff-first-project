@@ -37,19 +37,19 @@ const defaultProjects = [
     Img: "/Project/BlushPink.png",
     Title: "E-Invite - Blush Pink",
     Description: "Website Undangan Digital dengan Tema Blush & Pink serta Beberapa Elemen seperti: Hero Image Couple, Contdown Timer, Galerry Photo, Maps Location, Background Music dan Guest Comments.",
-    Link: "https://blush-pink.vercel.app",
+    Link: "https://blush-pink-orpin.vercel.app/",
   },
   {
     Img: "/Project/RomanticGarden.png",
     Title: "E-Invite - Romantic Garden",
     Description: "Website Undangan Digital dengan Tema Romantic Garden serta Elemen Seperti Hero Image Couple, Countdown Timer, Galerry Photo, Maps Location, Background Music dan Guest Comments.",
-    Link: "romantic-garden-wedding.vercel.app",
+    Link: "https://blush-pink-2zxy.vercel.app/",
   },
   {
     Img: "Project/GoldModernGlass.png",
     Title: "Gold & Modern Glass",
     Description: "Website Undangan Digital dengan Tema Romantic Garden serta Elemen Seperti Hero Image Couple, Countdown Timer, Galerry Photo, Maps Location, Background Music dan Guest Comments.",
-    Link: "https://gold-modern-glass.vercel.app/",
+    Link: "https://tom-summer.vercel.app/",
   },
   {
     Img: "/Project/Komputama.png",
@@ -57,6 +57,11 @@ const defaultProjects = [
     Description: "Website Kelas Tema simple dengan menampilkan dokumentasi personil kelas dan beberapa dokumentasi momen semasa di bangku sekolah.",
     Link: "https://komputama-26.edgeone.dev/",
   },
+  {
+    Img: "/Project/lingkarasa.png",
+    Title: "Company Profile Interaktif / Website Katalog Digital",
+    Description: "Website profil usaha kuliner/UMKM yang dilengkapi fitur interaktif, seperti form input ulasan, tombol pesan langsung ke WhatsApp, dan tautan lokasi Google Maps.",
+    Link: "https://lingkarasa.pages.dev/",}
 ];
 
 function TabPanel(props) {
